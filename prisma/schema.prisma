@@ -11,5 +11,7 @@ datasource db {
 model movie {
   id    String @id @default(uuid())
   name  String
-  phone String @unique
+  genre String @unique
+  rating String 
+  duration Int
 }
