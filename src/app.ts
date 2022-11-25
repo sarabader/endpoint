@@ -2,9 +2,13 @@ import express from 'express';
 import MovieRouter from './router/movie.route';
 import studentRouter from './router/student.route';
 import bankRouter from './router/bank.route';
-
+import 'dotenv/config';
+import { connectDB } from './config/db';
 
 const app = express();
+
+// Config
+connectDB();
 
 app.use(express.json());
 
