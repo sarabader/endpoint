@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import { movieSchemaType } from "../zod_schema/movie";
-// import { mov } from '@prisma/client';
+import { movie } from '@prisma/client';
 import { prisma } from "../config/db";
 import { PrismaClientKnownRequestError } from '@prisma/client/runtime';
 
